@@ -1,0 +1,142 @@
+<?php if (session_status() === PHP_SESSION_NONE) session_start(); ?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hostel Login</title>
+   <style>
+    /* Reset & Base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+    overflow: hidden;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Animated Background */
+.animated-bg {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    overflow: hidden;
+}
+.shapes {
+    position: relative;
+    list-style: none;
+    width: 100%;
+    height: 100%;
+}
+.shapes li {
+    position: absolute;
+    display: block;
+    width: 40px;
+    height: 40px;
+    background: rgba(0, 255, 255, 0.2);
+    animation: float 20s linear infinite;
+    bottom: -150px;
+    border-radius: 50%;
+}
+.shapes li:nth-child(1) { left: 10%; animation-delay: 0s; }
+.shapes li:nth-child(2) { left: 20%; animation-delay: 2s; }
+.shapes li:nth-child(3) { left: 25%; animation-delay: 4s; }
+.shapes li:nth-child(4) { left: 40%; animation-delay: 0s; }
+.shapes li:nth-child(5) { left: 70%; animation-delay: 3s; }
+.shapes li:nth-child(6) { left: 80%; animation-delay: 5s; }
+.shapes li:nth-child(7) { left: 90%; animation-delay: 7s; }
+.shapes li:nth-child(8) { left: 50%; animation-delay: 1s; }
+.shapes li:nth-child(9) { left: 60%; animation-delay: 6s; }
+.shapes li:nth-child(10) { left: 30%; animation-delay: 8s; }
+
+@keyframes float {
+    0% { transform: translateY(0) rotate(0deg); opacity: 1; }
+    100% { transform: translateY(-1000px) rotate(720deg); opacity: 0; }
+}
+
+/* Glassmorphic Login Form */
+.login-container {
+    z-index: 1;
+}
+.glass-form {
+    background: rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(20px);
+    border-radius: 20px;
+    padding: 40px;
+    width: 320px;
+    box-shadow: 0 0 30px rgba(0,255,255,0.2);
+    animation: fadeIn 1.5s ease;
+    color: #fff;
+}
+.glass-form h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #00ffe7;
+}
+.glass-form input {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.2);
+    color: #fff;
+    font-size: 1em;
+}
+.glass-form input::placeholder {
+    color: #ccc;
+}
+.glass-form button {
+    width: 100%;
+    padding: 12px;
+    background: linear-gradient(135deg, #00ffe7, #0077ff);
+    border: none;
+    border-radius: 10px;
+    color: #000;
+    font-weight: bold;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+.glass-form button:hover {
+    transform: scale(1.05);
+}
+.error {
+    color: #ff4b5c;
+    text-align: center;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+</style>
+</head>
+<body>
+    <div class="animated-bg">
+        <ul class="shapes">
+            <li></li><li></li><li></li><li></li><li></li>
+            <li></li><li></li><li></li><li></li><li></li>
+        </ul>
+    </div>
+
+    <div class="login-container">
+        <form method="POST" action="login.php" class="glass-form">
+            <h2> Hostel Login</h2>
+            <input type="text" name="username" placeholder="Username" required>
+            <input type="password" name="password" placeholder="Password" required>
+            <button type="submit" name="login">Login</button>
+            <?php if (isset($error)) echo "<p class='error'>$error</p>"; ?>
+        </form>
+    </div>
+</body>
+</html>
