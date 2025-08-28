@@ -6,7 +6,7 @@ This project is a collaborative web-based application developed to manage hostel
 
 ## Project Overview
 
-The Hostel Management System was built as part of our coursework in [Web Programming], under the guidance of [Prof.Felix Aryeh]. It demonstrates practical application of procedural PHP, MySQL database design, and responsive UI development. The project also emphasizes collaborative software engineering practices using GitHub for version control and team coordination.
+The Hostel Management System was built as part of our coursework in Web Programming, under the guidance of Prof.Felix Aryeh. It demonstrates practical application of procedural PHP, MySQL database design, and responsive UI development. The project also emphasizes collaborative software engineering practices using GitHub for version control and team coordination.
 
 ---
 
@@ -39,8 +39,8 @@ The Hostel Management System was built as part of our coursework in [Web Program
 | Column       | Type     | Description                    |
 |--------------|----------|--------------------------------|
 | id           | INT (PK) | Unique room ID                 |
-| building     | VARCHAR  | Building identifier (e.g., A–E)|
-| room_number  | VARCHAR  | Room label (e.g., 101, 202)    |
+| building     | VARCHAR  | Building identifier |
+| room_number  | VARCHAR  | Room label     |
 | capacity     | INT      | Maximum number of occupants    |
 | occupied     | INT      | Current number of occupants    |
 
