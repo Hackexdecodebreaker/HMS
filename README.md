@@ -1,5 +1,8 @@
 # Hostel Management System
 
+![hostelMS](https://github.com/user-attachments/assets/a1a87e10-73c6-40a2-9e24-e8faeec4965f)
+
+
 This project is a collaborative web-based application developed to manage hostel operations efficiently within an academic institution. It provides  student registration, intelligent room allocation, real-time occupancy tracking, and administrative control .
 
 ---
