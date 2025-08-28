@@ -1,0 +1,125 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.glass-wrapper {
+    width: 95%;
+    max-width: 1200px;
+    background: rgba(255, 255, 255, 0.07);
+    backdrop-filter: blur(20px);
+    border-radius: 20px;
+    padding: 40px;
+    box-shadow: 0 0 40px rgba(0, 255, 255, 0.2);
+    animation: fadeIn 1.2s ease;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+header h1 {
+    font-size: 2.5em;
+    color: #00ffe7;
+}
+
+.alert {
+    background: rgba(0, 255, 255, 0.1);
+    border-left: 5px solid #00ffe7;
+    padding: 10px 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    font-weight: bold;
+    animation: pulse 1s ease;
+}
+
+.room-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+}
+
+.room-card {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 0 20px rgba(0,255,255,0.1);
+    transition: transform 0.3s ease;
+}
+
+.room-card:hover {
+    transform: scale(1.03);
+}
+
+.room-card h2 {
+    color: #00c9a7;
+    margin-bottom: 15px;
+}
+
+.room-card ul {
+    list-style: none;
+    padding: 0;
+}
+
+.student-form {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.student-form span {
+    font-weight: bold;
+    color: #fff;
+}
+
+.student-form button {
+    background: linear-gradient(135deg, #ff4b5c, #ff6b81);
+    border: none;
+    padding: 8px 12px;
+    border-radius: 8px;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.student-form button:hover {
+    background: #ff3b4a;
+}
+
+.nav-links {
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-links a {
+    color: #00ffe7;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #ffffff;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.02); }
+    100% { transform: scale(1); }
+}
