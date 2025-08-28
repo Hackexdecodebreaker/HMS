@@ -67,16 +67,16 @@ The Hostel Management System was built as part of our coursework in Web Programm
 ## Contributors
 
 - Felix Nana Kyere Koomson  FCM.41.008.102.24 <br>
--Gankui Elliot Elikem Kwabla  FCM .41.008.087.25 <br>
--Christodia Jacquelin    FCM.41.008.071.24<br>
-Vanessa Terna-Manza Nyaku   FCM.41.008.119.24 <br>
-Josephine Naa Adoley Allotey   FCM.41.008.023.24<br>
-Acquah Kofi Awuah  FCM.41.008.008.24<br>
-Azure Malachi Sumdengya   FCM.41.008.054.24<br>
-Linda Perwodie    FCM.41.008.134.24<br>
-Aryee Joefred    FCM.41.008.037.24<br>
-Tsegah Desmond FCM.41.008.037.24<br>
-Nanleeb Solomon kok   FCM.41.008.113.24<br>
+- Gankui Elliot Elikem Kwabla  FCM .41.008.087.25 <br>
+- Christodia Jacquelin    FCM.41.008.071.24<br>
+- Vanessa Terna-Manza Nyaku   FCM.41.008.119.24 <br>
+- Josephine Naa Adoley Allotey   FCM.41.008.023.24<br>
+- Acquah Kofi Awuah  FCM.41.008.008.24<br>
+- Azure Malachi Sumdengya   FCM.41.008.054.24<br>
+- Linda Perwodie    FCM.41.008.134.24<br>
+- Aryee Joefred    FCM.41.008.037.24<br>
+- Tsegah Desmond FCM.41.008.037.24<br>
+- Nanleeb Solomon kok   FCM.41.008.113.24<br>
 
 This project was developed collaboratively using GitHub for version control, issue tracking, and peer review.
 
