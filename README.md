@@ -66,8 +66,8 @@ The Hostel Management System was built as part of our coursework in Web Programm
 
 ## Contributors
 
-- Felix Nana Kyere Koomson  FCM.41.008.102.24
--Gankui Elliot Elikem Kwabla  FCM .41.008.087.25
+- Felix Nana Kyere Koomson  FCM.41.008.102.24 \n
+-Gankui Elliot Elikem Kwabla  FCM .41.008.087.25 \n
 -Christodia Jacquelin    FCM.41.008.071.24
 Vanessa Terna-Manza Nyaku   FCM.41.008.119.24 
 Josephine Naa Adoley Allotey   FCM.41.008.023.24
